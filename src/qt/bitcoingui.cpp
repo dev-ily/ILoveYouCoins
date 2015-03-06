@@ -90,7 +90,7 @@ palette.setColor(QPalette::Button, QColor(247,247,247));
 palette.setColor(QPalette::ButtonText, Qt::black);
 palette.setColor(QPalette::BrightText, Qt::red);
  
-palette.setColor(QPalette::Highlight, QColor(247,247,247).lighter());
+palette.setColor(QPalette::Highlight, QColor(237,191,157).lighter());
 palette.setColor(QPalette::HighlightedText, Qt::black);
 qApp->setPalette(palette); 
 
@@ -363,7 +363,7 @@ void BitcoinGUI::createToolBars()
     toolbar->addAction(historyAction);
     toolbar->addAction(addressBookAction);
 	
-	toolbar->setStyleSheet("#toolbar { font-weight:300;border:none;height:100%;padding-top:20px; background: #f7f7f7; text-align: left; color: black;} QToolBar QToolButton:hover {background:rgb(247,247,247);} QToolBar QToolButton:checked {background:rgba(247,247,247);}  QToolBar QToolButton { font-weight:300;font-size:12px;font-family:'Roboto';padding-left:1px;padding-right:60px;padding-top:5px;padding-bottom:5px; height: 48px; width: 48px; color: black; text-align: left; background:transparent;text-transform:uppercase; }");
+	toolbar->setStyleSheet("#toolbar { font-weight:300;border:none;height:100%;padding-top:20px; background: #f7f7f7; text-align: left; color: black;} QToolBar QToolButton:hover {background:rgb(237,191,157);} QToolBar QToolButton:checked {background:rgba(247,247,247);}  QToolBar QToolButton { font-weight:300;font-size:12px;font-family:'Roboto';padding-left:1px;padding-right:60px;padding-top:5px;padding-bottom:5px; height: 48px; width: 48px; color: black; text-align: left; background:transparent;text-transform:uppercase; }");
 }
 
 void BitcoinGUI::setClientModel(ClientModel *clientModel)
